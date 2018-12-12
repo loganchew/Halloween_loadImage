@@ -1,8 +1,8 @@
-/* @pjs preload="pumpkins-1.png"; */
+/* @pjs preload="pumpkins.png"; */
 PImage img;
 void setup() {
 size(800, 500);
-img = loadImage("pumpkins-1.png");
+img = loadImage("pumpkins.png");
 image(img, 0, 0);
 }
 }
@@ -13,8 +13,8 @@ void mouseDragged()
 {
 noStroke();
 int c = blendColor(get(mouseX,mouseY),color(255, 200, 25),OVERLAY);
-fill(c);
-//fill(255, 200, 25);
+fill(255);
+
 ellipse(mouseX, mouseY, 5, 5);
 }
 }
